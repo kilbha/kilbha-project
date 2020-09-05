@@ -1,9 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+{% load static %}
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
     <title>Kilbha</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="{% static 'css/feedarea.css' %}" rel="stylesheet">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container center">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+                <span class="font-weight-bold h1">kilbha</span>
+            </a>
+        </div>
+        <a href="{% url 'logout' %}" class="text-white h4">Logout</a>
+    </nav>
 </head>
+
 <body>
 
 </body>

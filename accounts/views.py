@@ -9,7 +9,6 @@ def LoginPage(request):
         if request.method == 'POST':
             userobj = str(User.objects.get(email=request.POST['logemail']))
             user = authenticate(request,username=userobj,password=request.POST['logpassword'])
-            print(user)
             if user is not None:
                 login(request, user)
                 return redirect('home')
@@ -29,3 +28,6 @@ def SignUpPage(request):
             return redirect('login')
     else:
         return render(request,'accounts/signup.html')
+def LogOutPage(request):
+    logout(request)
+    return redirect('login')
