@@ -1,8 +1,22 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 def LoginPage(request):
-    return render(request,'accounts/login.html')
+    if request.user.is_authenticated:
+        return redirect('home')
+    else:
+        if request.method == 'POST':
+            userobj = str(User.objects.get(email=request.POST['logemail']))
+            user = authenticate(request,username=userobj,password=request.POST['logpassword'])
+            print(user)
+            if user is not None:
+                login(request, user)
+                return redirect('home')
+            else:
+                return render(request,'accounts/login.html',{"error":"Email or password is incorrect."})
+        else:
+            return render(request,'accounts/login.html')
 def SignUpPage(request):
     if request.method == 'POST':
         if User.objects.filter(username=request.POST["username"]).exists() or User.objects.filter(email=request.POST["regemail"]).exists():

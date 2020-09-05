@@ -41,6 +41,11 @@
     <input type="password" name="logpassword" id="inputPassword" class="form-control" placeholder="Password" required>
 
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-3 error">
+        {% if error %}
+        <b style="color:red;">{{ error }}</b>
+        {% endif %}
+    </p>
     <p class="mt-3 font-weight-normal">No account?</p>
     <a class="btn btn-md btn-success" href="{% url 'signup' %}">Sign up</a>
     <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
