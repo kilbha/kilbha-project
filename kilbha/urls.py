@@ -8,4 +8,6 @@ urlpatterns = [
     path('reg/',views.SignUpPage,name='signup'),
     path('',fviews.HomePage,name='home'),
     path('logout/',views.LogOutPage,name='logout'),
+    path('yes/<int:prk>',fviews.YesCounter,name='yc'),
+    path('no/<int:prk>',fviews.NoCounter,name='nc'),
 ]

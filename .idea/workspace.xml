@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f362a874-9070-4048-bd82-e3f5a69bb556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedarea/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedarea/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedarea/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/feedarea/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedarea/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/feedarea/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feedarea/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/feedarea/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kilbha/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kilbha/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/waste.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/feedarea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/feedarea.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/feedarea.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/feed/Feed Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feed/Feed Page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
