@@ -34,8 +34,8 @@
 <div class="container w-50 quesdiv border-3 mb-1">
     <p class="mb-1 text-secondary h5">{{ Q.Author }} asked</p>
     <p class="font-weight-bold mb-3 h4">{{ Q.Question }}</p>
-    <a class="btn btn-secondary btn-md mb-1" href="{% url 'yc' prk=Q.id %}">Yes</a>
-    <a class="btn btn-secondary btn-md mb-1" href="{% url 'nc' prk=Q.id %}">No</a>
+    <a class="btn btn-secondary btn-md mb-1" href="{% url 'yc' prk=Q.id %}">{{ Q.YCnt }} Yes</a>
+    <a class="btn btn-secondary btn-md mb-1" href="{% url 'nc' prk=Q.id %}">{{ Q.YCnt }} No</a>
 </div>
 {% endfor %}
 </body>
